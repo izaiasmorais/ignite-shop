@@ -1,11 +1,11 @@
-import type { StaticImport } from "next/dist/shared/lib/get-img-props";
+import type { ProductProps } from "@/@types/product";
 import Image from "next/image";
 
-interface ProductProps {
-	srcImg: string | StaticImport;
+interface ProductCardProps {
+	product: ProductProps;
 }
 
-export function Product({ srcImg }: ProductProps) {
+export function Product({ product }: ProductCardProps) {
 	return (
 		<a
 			href=""
@@ -13,7 +13,7 @@ export function Product({ srcImg }: ProductProps) {
 			relative cursor-pointer text-white overflow-hidden"
 		>
 			<Image
-				src={srcImg}
+				src={product.imageUrl}
 				alt="Camiseta X"
 				width={520}
 				height={480}
@@ -26,8 +26,10 @@ export function Product({ srcImg }: ProductProps) {
 			translate-y-full opacity-0 transition-all duration-300 ease-in-out
 			group-hover:translate-y-0 group-hover:opacity-100"
 			>
-				<strong className="text-lg">Camiseta X</strong>
-				<span className="text-xl font-bold text-green-300">R$ 79,90</span>
+				<strong className="text-lg">{product.name}</strong>
+				<span className="text-xl font-bold text-green-300">
+					R$ {product.price}
+				</span>
 			</footer>
 		</a>
 	);
