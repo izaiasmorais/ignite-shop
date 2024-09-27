@@ -8,6 +8,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
+			backgroundImage: {
+				linearion: "linear-gradient(180deg, #1ea483 0%, #7465d4 100%)",
+			},
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
