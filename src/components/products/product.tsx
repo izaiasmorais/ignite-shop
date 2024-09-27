@@ -9,8 +9,8 @@ export function Product({ srcImg }: ProductProps) {
 	return (
 		<a
 			href=""
-			className="group bg-linearion flex items-center justify-center p-[.5rem] relative
-		cursor-pointer text-white overflow-hidden"
+			className="keen-slider__slide group bg-linearion flex items-center justify-center p-[.5rem]
+			relative cursor-pointer text-white overflow-hidden"
 		>
 			<Image
 				src={srcImg}
