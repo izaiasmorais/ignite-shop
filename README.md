@@ -4,6 +4,10 @@
 
 Uma simples e-commerce que vende camisas personalizadas da Rocketseat. Ele é integrado com stripe para pagamentos e utiliza Next.js na construção de toda sua estrutura.
 
+| ![Image 1](https://github.com/user-attachments/assets/8f2a0fbf-fed8-49ac-8b87-909151f641c4) | ![Image 2](https://github.com/user-attachments/assets/cc82c3fe-989b-4bc9-a848-3444fc6459ba) |
+|:---:|:---:|
+
+
 ## Tecnologias
 
 - Linguagem: [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
