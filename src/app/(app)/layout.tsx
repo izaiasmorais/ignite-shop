@@ -5,7 +5,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 		<main className="bg-gray-900 max-w-[100vw] flex flex-col h-screen">
 			<Header />
 
-			<div className="p-4 flex-grow overflow-auto">{children}</div>
+			<div className="p-4 flex-grow overflow-hidden">{children}</div>
 		</main>
 	);
 }
