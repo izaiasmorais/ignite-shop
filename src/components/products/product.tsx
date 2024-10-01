@@ -1,5 +1,6 @@
 import type { ProductProps } from "@/@types/product";
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProductCardProps {
 	product: ProductProps;
@@ -7,8 +8,8 @@ interface ProductCardProps {
 
 export function Product({ product }: ProductCardProps) {
 	return (
-		<a
-			href=""
+		<Link
+			href={`/product/${product.id}`}
 			className="keen-slider__slide group bg-linearion flex items-center justify-center p-[.5rem]
 			relative cursor-pointer text-white overflow-hidden"
 		>
@@ -31,6 +32,6 @@ export function Product({ product }: ProductCardProps) {
 					R$ {product.price}
 				</span>
 			</footer>
-		</a>
+		</Link>
 	);
 }
