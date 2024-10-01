@@ -29,7 +29,10 @@ export function Product({ product }: ProductCardProps) {
 			>
 				<strong className="text-lg">{product.name}</strong>
 				<span className="text-xl font-bold text-green-300">
-					R$ {product.price}
+					{new Intl.NumberFormat("pt-BR", {
+						style: "currency",
+						currency: "BRL",
+					}).format(product.price)}
 				</span>
 			</footer>
 		</Link>

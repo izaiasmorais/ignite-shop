@@ -3,7 +3,6 @@ import { useKeenSlider } from "keen-slider/react";
 import { Product } from "@/components/products/product";
 import type { ProductProps } from "@/@types/product";
 
-
 interface ProductSliderProps {
 	products: ProductProps[];
 }
