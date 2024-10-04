@@ -3,4 +3,6 @@ export interface ProductProps {
 	name: string;
 	imageUrl: string;
 	price: number;
+	description: string | null;
+	defaultPriceId: string;
 }
