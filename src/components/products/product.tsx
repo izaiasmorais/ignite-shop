@@ -1,9 +1,9 @@
-import type { ProductProps } from "@/@types/product";
+import type { ProductI } from "@/@types/product";
 import Image from "next/image";
 import Link from "next/link";
 
 interface ProductCardProps {
-	product: ProductProps;
+	product: ProductI;
 }
 
 export function Product({ product }: ProductCardProps) {

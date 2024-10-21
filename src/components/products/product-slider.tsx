@@ -1,10 +1,10 @@
 "use client";
 import { useKeenSlider } from "keen-slider/react";
 import { Product } from "@/components/products/product";
-import type { ProductProps } from "@/@types/product";
+import type { ProductI } from "@/@types/product";
 
 interface ProductSliderProps {
-	products: ProductProps[];
+	products: ProductI[];
 }
 
 export function ProductSlider({ products }: ProductSliderProps) {
